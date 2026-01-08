@@ -42,3 +42,31 @@ todo-app/
     ├── tailwind.config.js
     ├── postcss.config.js
     └── README.md
+
+    Backend Files Breakdown
+/backend/cmd/server/main.go
+Entry point - initializes server and routes
+/backend/internal/models/todo.go
+Todo struct and model definitions
+/backend/internal/store/memory_store.go
+In-memory data storage implementation
+/backend/internal/handlers/todo_handler.go
+HTTP handlers for CRUD operations
+/backend/internal/middleware/cors.go
+CORS middleware configuration
+Frontend Files Breakdown
+/frontend/src/components/
+
+TodoList.vue - Renders list of todos
+TodoItem.vue - Individual todo item component
+TodoInput.vue - Input field for new todos
+TodoFilter.vue - Filter buttons (All/Active/Completed)
+
+/frontend/src/services/api.js
+API service layer for backend communication
+/frontend/src/composables/useTodos.js
+Vue composition API for todo logic (reusable)
+/frontend/src/App.vue
+Main application component
+/frontend/src/main.js
+Vue app initialization
